@@ -1,7 +1,7 @@
-a = 12
-b = 10
-c = 19
+a = int(input("Введите первое число: "))
+b = int(input("Введите второе число: "))
+c = int(input("Введите второе число: "))
 print(a, b, c)
 print(a, b, c, sep=":")
-print("a \nb \nc")
-print("-a \n-b \n-c")
+print(f"{a} \n{b} \n{c}")
+print(f"-{a} \n-{b} \n-{c}")
