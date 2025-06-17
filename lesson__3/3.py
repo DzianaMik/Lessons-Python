@@ -1,11 +1,10 @@
-a = 129 #цена закупки
-b = a + (a * 0.30) #цена продажи (+30% к цене закупке)
-print(b)
-a = 129 #цена закупки
-b = a + (a * 0.30) #цена продажи (+30% к цене закупке)
-c = b - (b * 0.05)
-print(c) #цена продажи со скидкой 5%
-d = c - (c * 0.1) #цена продажи со скидкой 10%
-print(d)
-e = d - (d * 0.15) #цена продажи со скидкой 15%
-print(e) 
+purchase_price = float(input("Введите цену закупки телефона: "))
+sale_price = purchase_price * 1.30
+print(f"Цена закупки телефона : {purchase_price}")
+print(f"Цена продажи (+30%) : {sale_price}")
+discount_price = sale_price * 0.95
+print(f"Цена продажи со скидкой 5% : {discount_price}")
+discount_price2 = sale_price * 0.90
+print(f"Цена продажи со скидкой 10% : {discount_price2}")
+discount_price3 = sale_price * 0.85
+print(f"Цена продажи со скидкой 10% : {discount_price3}")
