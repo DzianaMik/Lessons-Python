@@ -1,0 +1,8 @@
+nums = input("Введите несколько цифр через пробел: ")
+numbers = list(map(int, nums.split()))
+total = sum(numbers)
+maximum = max(numbers)
+average = total / len(numbers)
+print("Сумма:", total)
+print("Максимальная цифра:", maximum)
+print("Среднее арифметическое:", average)
