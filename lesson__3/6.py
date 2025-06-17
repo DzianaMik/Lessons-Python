@@ -1,6 +1,5 @@
-a = 81
-b = 11
-c = 99
-d = (a + b + c)/3
-print(d)
-print(f"{d: .3f}")
+a = float(input("Введите первое число: "))
+b = float(input("Введите второе число: "))
+c = float(input("Введите третье число: "))
+average = (a + b + c) / 3
+print(f"{average: .3f}")
