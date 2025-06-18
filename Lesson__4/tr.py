@@ -31,3 +31,14 @@ for part in value:
     part = part.strip().split(":")
     date.append(part[1].strip())
 print(f"{date[0]}\n- {date[1]}\n- {date[2]}")
+
+
+
+
+products = "яблоки, бананы, апельсины, груши"
+list = products.split (",")
+date = []
+for part in list:
+    part = part.strip().split(".")
+    date.append(part[1].strip())
+print(f"{date[0]}\n- {date[1]}\n- {date[2]}")
