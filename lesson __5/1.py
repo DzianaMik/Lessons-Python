@@ -1,0 +1,7 @@
+product1 = input("Ввести 1 товар и цена: ")
+product2 = input("Ввести 2 товар и цена: ")
+product3 = input("Ввести 3 товар и цена: ")
+print("\nСписок товаров:")
+print("<<", product1)
+print("<<", product2)
+print("<<", product3)
