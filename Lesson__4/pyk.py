@@ -1,6 +1,5 @@
-number = int(input("Введите число: "))
-print(f"{number:,}".replace(",", " "))
-
-
-number = input("Введите число: ")
-print(f"{number:,}".replace(","," "))
+phrase = input("Ввести фразу: ")
+length = len(phrase)
+word = len(phrase.split())
+print("Количество символо: ", length)
+print("Количество слов: ", word)
