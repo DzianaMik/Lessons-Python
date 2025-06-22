@@ -1,0 +1,10 @@
+name = []
+name.append(input("Ввести имя: "))
+name.append(input("Ввести имя: "))
+name.append(input("Ввести имя: "))
+name.append(input("Ввести имя: "))
+name.append(input("Ввести имя: "))
+print("Список:", name)
+name.sort()
+print("Отсортированный список:", name)
+print("Есть ли Вася в списке?", "Вася" in name)
