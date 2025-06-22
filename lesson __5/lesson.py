@@ -1,5 +1,5 @@
-d = {'one':11, 'two':22, 'hello':'python', True:False}
-keys = list(d)
-n = int(input("Введите номер элемента: "))
-del d[keys[n]]
+cities = {'Москва': 12000000, 'Питер': 5300000, 'Новосибирск': 1600000, 'Екатеринбург': 1500000}
+keys = list(cities)
+n = int(input("Вывести список городов с номерами: "))
+del cities[keys[n]]
 print(d)
