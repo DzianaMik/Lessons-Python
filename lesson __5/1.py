@@ -11,6 +11,6 @@ for name, price in products.items():
 price = input("\nВведите название товара увеличенного на 15%: ")
 if price in products:
    increased = products[price] * 1.15
-   print(f"Цена{price} увеличенна на 15%: {increased}")
+   print(f"Цена{price} увеличена на 15%: {increased}")
 total = sum(products.values())
 print(f"\nСумма всех товаров: {total}")
