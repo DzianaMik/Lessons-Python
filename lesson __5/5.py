@@ -1,0 +1,6 @@
+phrase = input("Ввести фразу: ")
+unique_symbols = set(phrase)
+print("Уникальные символы: ", len(unique_symbols))
+words = phrase.split()
+unique_words = set(words)
+print("Уникальные слова: ", len(unique_symbols))
