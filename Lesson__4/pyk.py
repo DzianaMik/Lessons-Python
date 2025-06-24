@@ -1,10 +1,3 @@
-num = input("Ввести число: ")
-result = list(map(int, num.split()))
-length = len(result)
-maksimum = max(result)
-minimum = min(result)
-average = sum(result) / len(result)
-print("Количество введённых возрастов: ", length)
-print("Максимальный возраст: ", maksimum)
-print("Минимальный возраст: ", minimum)
-print("Средний возраст: ", round(average, 2))
+text = input("Ввести цифры: ")
+print(text[::-1])
+
