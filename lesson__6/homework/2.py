@@ -8,3 +8,16 @@
 в остальных случаях - "доступ запрещен".
 
 '''
+
+login = input("Ввести логин: ")
+password = input("Ввести пароль: ")
+age = int(input("Ввести возраст: "))
+if login == "admin" and password == "123456":
+   print("Доступ разрешен")
+elif login == "vasya" and password == "vas123" and age < 60:
+    print("Доступ разрешен")
+elif login == "guest" and age > 18:
+    print("Доступ разрешен")
+else:
+    print("Доступ запрещен")
+
