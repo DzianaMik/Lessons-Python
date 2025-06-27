@@ -1,9 +1,9 @@
-text1 = int(input("Ввести число: "))
-text2 = int(input("Ввести число: "))
-text3 = int(input("Ввести число: "))
-if text1 > text2 and text1 > text3:
-    print("yes", text1)
-if text2 > text1 and text2 > text3:
-    print("no", text2)
-else:
-    print("Yes2", text3)
+text1 = int(input("Ввести числа: "))
+if 1 <= text1:
+    for i in range(1, text1 +1):
+        if i / 3 == 0:
+            print(f"{i} Fizz")
+
+   
+
+
