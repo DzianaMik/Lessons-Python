@@ -1,16 +1,9 @@
-year = int(input("Введите ваш год рождения: "))
-age = 2025 - year
-if age < 0:
-    print("Не родился")
-if age <= 10:
-    print("Ребёнок")
-if age <= 17:
-    print("Подросток")
-if age <= 25:
-    print("Юноша")
-if age <= 45:
-    print("В расцвете сил")
-if age <= 65:
-    print("Пожилой")
+text1 = input("Ввести число: ")
+text2 = input("Ввести число: ")
+text3 = int(input("Ввести число: "))
+if text1 == "admin" and text2 == 123456:
+    print("Разрешено")
+elif text1 == "vasya" and text2 == "vas123" and text3 < 60:
+    print("Разрешено")
 else:
-    print("Старик")
+    print("Запрещено")
