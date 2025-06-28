@@ -14,3 +14,15 @@
 
 
 '''
+
+
+my_list = ['qwertyu','asdfggh','zxcvbnm','yuiop[]','hjklasd','mnbvnbv']
+numb = 0
+while numb < len(my_list):
+    word = my_list[numb]
+    if len(word) > numb:
+        letter = word[numb]
+    else:
+        letter = "(no)"
+    print(f"{numb + 1} - {word} - {letter}")
+    numb += 1
