@@ -4,4 +4,11 @@
 Например: дано 236 => 2*2 + 3*3 + 6*6 = 49 
 
 """
-
+number = input("Введите число: ")
+if not number.isdigit() or int(number) < 10:
+    print("Ошибка: введите число не менее 10.")
+else:
+    total = 0
+    for i in number:
+        total += int(i) ** 2
+    print(f"Сумма квадратов цифр {number} = {total}")

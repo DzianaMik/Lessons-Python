@@ -1,8 +1,14 @@
-number = int(input("Введите число: "))
-for i in range(1, number +1):
-    i % 2 == 0
-    total = sum(i)
-    print(total)
+total = 0
+count = 0
+while True:
+    grades = int((input("Ввести оценки: ")))
+    if not grades.isdigit()
+    if grades > 0:
+        break
+else:
+    print("no")
+
+
 
 
   
