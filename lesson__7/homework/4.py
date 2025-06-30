@@ -12,3 +12,14 @@
 * - елочка со снегом
 '''
 
+
+
+text1 = int(input("Ввести числа от 3 до 20: "))
+if 3 <= text1 <= 20:
+    for i in range(1, text1 +1):
+        text2 = "*" * (2 * i - 1)
+        text3 = " " * (text1 - i)
+        print(text3 + text2)
+else:
+   print("no")
+        
