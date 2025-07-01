@@ -1,12 +1,17 @@
-total = 0
+text1 = input("Ввести строку: ").lower()
+text2 = "аеиоуыэюя"
 count = 0
-while True:
-    grades = int((input("Ввести оценки: ")))
-    if not grades.isdigit()
-    if grades > 0:
-        break
-else:
-    print("no")
+for i in text1:
+    if i in text2:
+        count += 1
+print(count)
+
+
+
+
+
+
+
 
 
 
