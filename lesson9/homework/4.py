@@ -10,10 +10,10 @@
 Использовать map и lambda.
 '''
 
-date = [1,2,3,4,5,6,7,8,9]
-text1 = list(map(lambda x: x**2, date))
-text2 = list(map(lambda x: x + 3 if x % 2 == 0 else x, date))
-text3 = list(map(lambda x: x * 2 if x % 2 == 0 else x * 3, date))
+data = [1,2,3,4,5,6,7,8,9]
+text1 = list(map(lambda x: x**2, data))
+text2 = list(map(lambda x: x + 3 if x % 2 == 0 else x, data))
+text3 = list(map(lambda x: x * 2 if x % 2 == 0 else x * 3, data))
 print("Копия 1:", text1)
 print("Копия 2:", text2)
 print("Копия 3:", text3)
