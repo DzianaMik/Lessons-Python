@@ -6,3 +6,11 @@
 """
 
 
+
+counter = 0  
+def print_n(text):
+    global counter     
+    counter += 1       
+    print(f"{counter}: {text}")
+print_n("Hello Python")
+
