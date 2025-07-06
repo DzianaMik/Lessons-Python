@@ -6,7 +6,7 @@
  
 '''
 data = [True, "text", 123, False, None, "another", 0]
-date1 = list(filter(lambda x: isinstance(x, str), lst))
-date2 = list(filter(lambda x: type(x) == bool, lst))
-print(date1)
-print(date2)
+text1 = list(filter(lambda x: isinstance(x, str), data))
+text2 = list(filter(lambda x: type(x) == bool, data))
+print(text1)
+print(text2)
