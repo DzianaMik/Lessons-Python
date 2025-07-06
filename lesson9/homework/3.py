@@ -6,3 +6,12 @@
 Пример: a = 5, b = 9 -> 35 (5+6+7+8+9)"
 
 '''
+
+
+def sum_nums(a, b):
+    if a <= 0 or b <= 0:
+        return "Только положительные числа!"
+    if a > b:
+        return b + sum_nums(b + 1, a)
+    else:
+        return a + sum_nums(a + 1, b)

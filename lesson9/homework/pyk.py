@@ -1,5 +1,5 @@
-items = [10, "apple", True, 5, "banana", False, 3.14, "cherry"]
-text1 = list(filter(lambda x: isinstance(x, (int, float)), items))
-text2 = list(filter(lambda x: isinstance(x, str), items))
-print(text1)
-print(text2)
+def count_down(n):
+    if n == 1:
+        return 1
+    else:
+        return count_down(n)
