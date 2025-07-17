@@ -1,5 +1,13 @@
-def count_down(n):
-    if n == 1:
-        return 1
-    else:
-        return count_down(n)
+def count_even(numbers):
+    count = 0
+    for i in numbers:
+        if i % 2 == 0:
+            count += 1
+            return count
+
+
+    
+
+
+    
+
