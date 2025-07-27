@@ -32,5 +32,71 @@
 При изменении даты подписки  вид подписки меняется на платный.
 Валидацию данных сделать через регулярные выражения
 """
+import re
+from datetime import date
+
+class User:
+    def __init__(self, name, login, password, subscription_date, subscription_mode="free"):
+        self.name = name
+        self.login = login
+        self.password = password
+        self.is_blocked = False
+        self.subscription_date = subscription_date
+        self.subscription_mode = subscription_mode
+
+    @property
+    def name(self):
+        return self._name
+
+    @name.setter
+    def name(self, value):
+        if re.fullmatch(r"[А-Яа-яЁё]+", value):
+            self._name = value
+        else:
+            raise ValueError("Имя должно содержать только буквы русского алфавита")
+
+    @property
+    def login(self):
+        return self._login
+
+    @login.setter
+    def login(self, value):
+        if re.fullmatch(r"[A-Za-z0-9_]{6,}", value):
+            self._login = value
+        else:
+            raise ValueError("Логин должен содержать латинские буквы, цифры и подчёркивание, минимум 6 символов")
+
+    @property
+    def password(self):
+        return self._password
+
+    @password.setter
+    def password(self, value):
+        if len(value) < 6:
+            raise ValueError("Пароль должен содержать не менее 6 символов")
+        if not re.search(r"[a-z]", value):
+            raise ValueError("Пароль должен содержать строчную букву")
+        if not re.search(r"[A-Z]", value):
+            raise ValueError("Пароль должен содержать заглавную букву")
+        if not re.search(r"[0-9]", value):
+            raise ValueError("Пароль должен содержать хотя бы одну цифру")
+        if not re.fullmatch(r"[A-Za-z0-9]+", value):
+            raise ValueError("Пароль может содержать только латинские буквы и цифры")
+        self._password = value
+
+    def __str__(self):
+        return f"{self.name} ({self.login}) — подписка: {self.subscription_mode}, действует до {self.subscription_date}"
+
+try:
+    user = User(
+        name="Анна",
+        login="Anna_01",
+        password="Passw1",
+        subscription_date=date(2025, 12, 31),
+        subscription_mode="paid"
+    )
+    print(user)
+except ValueError as e:
+    print("Ошибка:", e)
 
 
